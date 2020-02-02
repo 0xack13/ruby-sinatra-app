@@ -21,3 +21,4 @@ If the default port `80` is already in use, you can run the container on a diffe
 docker run -p 4000:80 sbatati/ruby-sinatra-app
 curl localhost:4000/hello-world
 ```
+The EKS templates can be used with AWS ALB ingress only. In order to get that working, you need to make sure that the ALB ingress controller is deployed first to your EKS cluster before the deployment of the Sinatra Application.
